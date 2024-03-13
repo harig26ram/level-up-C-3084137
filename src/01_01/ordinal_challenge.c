@@ -6,6 +6,17 @@ char *ordinal(int v)
 	   - create this function
 	   - this code won't run with out it!
 	 */
+	if(v == 11 || v == 12 || v== 13)
+	return ("th");
+	v=v%10;
+	if(v==1)
+	return ("st");
+	else if(v==2)
+	return("nd");
+	else if(v==3)
+	return("rd");
+	else 
+	return("th");
 }
 
 int main()
